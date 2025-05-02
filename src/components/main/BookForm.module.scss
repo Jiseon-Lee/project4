@@ -1,0 +1,36 @@
+.book_form {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: pink;
+
+    dl {
+        float: left;
+        text-align: center;
+    }
+    dt {
+        width: 150px;
+        height: 30px;
+    }
+    dd {
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+.start_date {
+    width: 150px;
+    float: left;
+}
+
+.end_date {
+    width: 150px;
+    float: left;
+}
+
+.date {
+    width: 100px;
+    float: left;
+    text-align: center;
+}
+
