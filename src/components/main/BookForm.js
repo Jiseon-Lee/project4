@@ -20,13 +20,13 @@ function BookForm() {
     };
 
     return (
-        <>
-            <form className={styles.book_form}>
+        <div className={styles.book_form}>
+            <div className={styles.book_form_date}>
                 <dl>
-                    <dt>
-                        <label className={styles.form_label}>체크인</label>
+                    <dt className={styles.book_form_date_title}>
+                        <label>체크인</label>
                     </dt>
-                    <dd>
+                    <dd className={styles.book_form_date_cont}>
                         <DatePicker
                             selected={startDate}
                             onChange={(date) => {
@@ -39,8 +39,8 @@ function BookForm() {
                             minDate={today}
                             monthsShown={2}
                             placeholderText="날짜 선택"
-                            className="form-control"
-                            dateFormat="yyyy-MM-dd"
+                            className={styles.book_form_date_cont_input}
+                            dateFormat="yyyy.MM.dd"
                         />
                     </dd>
                 </dl>
@@ -54,10 +54,10 @@ function BookForm() {
                     </dd>
                 </dl>
                 <dl>
-                    <dt>
+                    <dt className={styles.book_form_date_title}>
                         <label className={styles.form_label}>체크아웃</label>
                     </dt>
-                    <dd>
+                    <dd className={styles.book_form_date_cont}>
                         <DatePicker
                             selected={endDate}
                             onChange={(date) => setEndDate(date)}
@@ -67,13 +67,34 @@ function BookForm() {
                             minDate={startDate || today}
                             monthsShown={2}
                             placeholderText="날짜 선택"
-                            className="form-control"
-                            dateFormat="yyyy-MM-dd"
+                            className={styles.book_form_date_cont_input}
+                            dateFormat="yyyy.MM.dd"
                         />
                     </dd>
                 </dl>
-            </form>
-        </>
+            </div>
+            <div className={styles.book_form_room}>
+                <dl>
+                    <dt>객실</dt>
+                    <dd></dd>
+                </dl>
+                <dl>
+                    <dt>성인</dt>
+                    <dd></dd>
+                </dl>
+                <dl>
+                    <dt>어린이<i class="bi bi-info-circle"></i></dt>
+                    <dd></dd>
+                </dl>
+                <dl>
+                    <dt>유아<i class="bi bi-info-circle"></i></dt>
+                    <dd></dd>
+                </dl>
+            </div>
+            <div className={styles.book_form_btn}>
+                <button type="button" class="btn btn-primary btn-lg">예약하기</button>
+            </div>
+        </div>
     )
 }
 

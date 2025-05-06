@@ -1,0 +1,24 @@
+.top {
+    background-color: #F2E4C9;
+    height: 90px;
+    position: relative;
+}
+
+.top_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.top_wrap a {
+    color: #856f56;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+}

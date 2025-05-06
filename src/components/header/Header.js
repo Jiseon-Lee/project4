@@ -1,12 +1,14 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
 
+import styles from './Header.module.scss'
+
 function Header() {
     return (
-        <div className="header">
-            <div className='top'>
-                <div className='top_wrap'>
-                    <img src="/img/logo.gif" height="90" className="logo" alt="shilla jeju logo"/>
+        <div className={styles.header}>
+            <div className={styles.top}>
+                <div className={styles.top_wrap}>
+                    <img src="/img/logo.gif" height="90" className={styles.logo} alt="shilla jeju logo"/>
                     <Nav className="justify-content-end" activeKey="/home">
                         <Nav.Item>
                             <Nav.Link href="/login">로그인</Nav.Link>

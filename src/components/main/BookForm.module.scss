@@ -1,36 +1,58 @@
 .book_form {
     width: 1200px;
-    margin: 0 auto;
-    background-color: pink;
+    margin: 42px auto 0;
 
     dl {
         float: left;
         text-align: center;
     }
     dt {
-        width: 150px;
-        height: 30px;
+        color: #888;
+        font-size: 0.8em;
     }
-    dd {
-        width: 150px;
-        height: 30px;
-        line-height: 30px;
+
+    &_date {
+
+        dt {
+            width: 85px;
+            height: 30px;
+        }
+        dd {
+            width: 85px;
+            height: 30px;
+            line-height: 30x;
+        }
+
+        &_title {
+            width: 150px !important;
+        }
+
+        &_cont {
+            width: 150px !important;
+
+            &_input {
+                border: none;
+                text-align: center;
+                width: 150px;
+            }
+        }
+    }
+
+    &_room {
+
+        dt {
+            width: 80px;
+            height: 30px;
+        }
+
+        dd {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+
+    &_btn {
+        float: right;
     }
 }
-
-.start_date {
-    width: 150px;
-    float: left;
-}
-
-.end_date {
-    width: 150px;
-    float: left;
-}
-
-.date {
-    width: 100px;
-    float: left;
-    text-align: center;
-}
-
