@@ -1,0 +1,78 @@
+.footer {
+    width: 100%;
+
+    &_top {
+        width: 100%;
+        background-color: #F2ECD8;
+
+        &_jeju {
+            &_logo {
+                width: 230px;
+                height: 100px;
+                overflow: hidden;
+            }
+            img {
+                width: 100%;
+                transform: translateY(-40px);
+            }
+
+            p {
+                font-size: 0.7em;
+                word-break: keep-all;
+            }
+
+            a {
+                color: #9B8D78;
+            }
+        }
+
+        &_brand {
+            &_tit {
+                width: 140px;
+                height: 68px;
+                overflow: hidden;
+        
+                img {
+                    width: 100%;
+                    transform: translateY(0);
+                }
+                &:hover img {
+                    transform: translateY(-68px);
+                }
+            }
+            &_mono {
+                width: 226px;
+                height: 68px;
+                overflow: hidden;
+        
+                img {
+                    width: 100%;
+                    transform: translateY(0);
+                }
+                &:hover img {
+                    transform: translateY(-68px);
+                }
+            }
+            &_stay {
+                width: 150px;
+                height: 68px;
+                overflow: hidden;
+        
+                img {
+                    width: 100%;
+                    transform: translateY(0);
+                }
+                &:hover img {
+                    transform: translateY(-68px);
+                }
+            }
+        }
+    }
+
+    &_btm {
+        p {
+            font-size: 0.7em;
+            word-break: keep-all;
+        }
+    }
+}
