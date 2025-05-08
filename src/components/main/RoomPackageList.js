@@ -11,8 +11,8 @@ function RoomPackage(props) {
             <h2 className={styles.package_title}>객실패키지</h2>
             <div className={"row " + styles.package_cont}>
                 {
-                    data.map(product => (
-                        <div className={"col-md-4 " + styles.package_product}>
+                    data.map((product, id) => (
+                        <div className={"col-md-4 " + styles.package_product} key={id}>
                             <CardItem product={product} type="package" />
                         </div>
                     ))

@@ -21,7 +21,7 @@ function Header() {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="/">
-                                <i class="bi bi-globe"></i> 한국어
+                                <i className="bi bi-globe"></i> 한국어
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>

@@ -21,7 +21,7 @@ function Home() {
         .catch(error => console.error('package데이터를 불러오는 중 오류 발생:', error));
 
         axios.get("./json/event_product.json")
-        .then(res => setEventData(res.data[0].slice(0, 3)))
+        .then(res => setEventData(res.data.slice(0, 3)))
         .catch(error => console.error('package데이터를 불러오는 중 오류 발생:', error));
     }, []);
 
