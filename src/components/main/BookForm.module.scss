@@ -1,60 +1,24 @@
-.book_form {
+.bookContainer {
+    border-bottom: 1px solid #eaeaea;
     margin-top: 42px;
-    overflow: hidden;
-    padding: 5px 0;
+    padding: 0 !important;
+    text-align: center;
+    position: relative;
 
-    dl {
-        float: left;
-        text-align: center;
-        margin: 0;
-    }
-    dt {
-        color: #888;
-        font-size: 0.8em;
-    }
+    &_form {
 
-    &_date {
+        &_control {
+            width: 100% !important;
+            border: none !important;
+            font-weight: bold !important;
+            text-align: center !important;
+            padding: 0 !important;
 
-        dt {
-            width: 85px;
-            height: 30px;
-        }
-        dd {
-            width: 85px;
-            height: 30px;
-            line-height: 30px;
-        }
-
-        &_title {
-            width: 150px !important;
-        }
-
-        &_cont {
-            width: 150px !important;
-
-            &_input {
-                border: none;
-                text-align: center;
-                width: 150px;
+            &:focus {
+                border: none !important;
+                box-shadow: none !important;
+                outline: none !important;
             }
         }
-    }
-
-    &_room {
-
-        dt {
-            width: 80px;
-            height: 30px;
-        }
-
-        dd {
-            width: 80px;
-            height: 30px;
-            line-height: 30px;
-        }
-    }
-
-    &_btn {
-        float: right;
     }
 }

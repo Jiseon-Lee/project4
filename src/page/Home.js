@@ -9,6 +9,7 @@ import Event from '../components/main/EventList';
 import Room from '../components/main/Room';
 import Footer from '../components/footer/Footer';
 import MainSlider from '../components/main/MainSlider';
+import { Container } from 'react-bootstrap';
 
 function Home() {
 
@@ -29,12 +30,12 @@ function Home() {
         <>
             <Header></Header>
             <MainSlider/>
-            <div style={{width: "1200px", margin: "0 auto" }}>
+            <Container>
                 <BookForm/>
                 <RoomPackage data={packageData}/>
                 <Event data={eventData}/>
                 <Room/>
-            </div>
+            </Container>
             <Footer/>
         </>
     )

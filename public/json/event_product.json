@@ -157,8 +157,8 @@
         "id": 10,
         "title": "Romantic Propose Day",
         "desc": "프라이빗한 공간에서 사랑하는 연인에게 바치는 특별한 시간.\n설레는 순간을 더욱 빛나게 만드는 로맨틱한 프로포즈는\n오래도록 잊지 못할 또 하나의 소중한 추억을 선사합니다.",
-        "start_date": null,
-        "end_date": null,
+        "start_date": "2025-05-01",
+        "end_date": "2025-08-31",
         "day": null,
         "time": null,
         "location": null,
@@ -312,22 +312,6 @@
         "notification": [
             "풀사이드 바는 투숙객 전용으로 외부 고객은 이용하실 수 없습니다.",
             "호텔 사정에 따라 변경 및 취소될 수 있습니다."
-        ],
-        "include": []
-    },{
-        "id": 20,
-        "title": "Celebrating Parents' Day",
-        "desc": "어버이날을 맞이하여 패스트리 부티크에서 선보이는 스페셜 선물로\n사랑하는 부모님께 감사의 마음을 전해보세요.",
-        "start_date": "2025-05-06",
-        "end_date": "2025-05-08",
-        "day": null,
-        "time": null,
-        "location": "패스트리 부티크(6F)",
-        "fee": null,
-        "target": null,
-        "inquiry": "064-735-5587",
-        "notification": [
-            "한정 판매 상품으로, 사전 예약을 권해드리며 조기 마감될 수 있습니다."
         ],
         "include": []
     }

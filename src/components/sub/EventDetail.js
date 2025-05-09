@@ -18,7 +18,7 @@ function RoomPackageDetail({item}) {
                 <img src={`/img/event/event${item.id}.jpg`} alt={item.name} className={styles.main_img}/>
                 <img src={`/img/event/event${item.id}_title.jpg`} alt={item.name} className={styles.main_title} />
                 <p>{item.desc}</p>
-                <p>기간 : {item.start_date} ~ {item.end_date}</p>
+                {item.start_date !== null && item.end_date !== null && <p>기간 : {item.start_date} ~ {item.end_date}</p>}
                 <div>
                 {
                     item.notification && item.notification.map((noti, id) => (
