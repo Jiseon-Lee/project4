@@ -19,8 +19,8 @@ function RoomPackageDetail({item, type}) {
         <button className={styles.btns_list} type="button">목록보기</button>
       </div>
       <div className={styles.main}>
-        <img src={`/img/package/package${item.id}.jpg`} alt={item.name} className={styles.main_img}/>
-        <img src={`/img/package/package${item.id}_title.jpg`} alt={item.name} className={styles.main_title} />
+        <img src={`${process.env.PUBLIC_URL}/img/package/package${item.id}.jpg`} alt={item.name} className={styles.main_img}/>
+        <img src={`${process.env.PUBLIC_URL}/img/package/package${item.id}_title.jpg`} alt={item.name} className={styles.main_title} />
         <p>{item.desc}</p>
         <p>기간 : {item.start_date} ~ {item.end_date}</p>
         <div>
@@ -91,8 +91,8 @@ function RoomPackageDetail({item, type}) {
             item.product_list.map((product, i) => (
               <div className={styles.main_packProduct_unit} key={i}>
                 <h5>{product.title}</h5>
-                <img src={`/img/package/package${item.id}_${2*i+1}.jpg`} alt={product.title}/>
-                <img src={`/img/package/package${item.id}_${2*i+2}.jpg`} alt={product.title}/>
+                <img src={`${process.env.PUBLIC_URL}/img/package/package${item.id}_${2*i+1}.jpg`} alt={product.title}/>
+                <img src={`${process.env.PUBLIC_URL}/img/package/package${item.id}_${2*i+2}.jpg`} alt={product.title}/>
                 {[0, 1, 2].map((idx) => {
                   const prefix = ['', '- ', '※ '][idx];
                   const content = product.disc[idx];
@@ -110,7 +110,7 @@ function RoomPackageDetail({item, type}) {
           }
         </div>
         <SwimingPool/>
-        <img src="/img/sub/BN_pkgApp.jpg" alt="신라호텔 모바일 앱" className={styles.main_banner}/>
+        <img src={`${process.env.PUBLIC_URL}/img/sub/BN_pkgApp.jpg`} alt="신라호텔 모바일 앱" className={styles.main_banner}/>
         <UseInfo/>
         <RefundPolicy />
         <div className={"row justify-content-between " + styles.main_reservation}>
@@ -143,7 +143,7 @@ function ShillaRewards(){
   return(
     <div className={styles.sRewards}>
       <div className={styles.sRewards_tit}>
-        <img src="/img/sub/sReward.gif" alt="신라리워즈" />
+        <img src={`${process.env.PUBLIC_URL}/img/sub/sReward.gif`} alt="신라리워즈" />
         <p>신라리워즈<br/>프로모션</p>
       </div>
       <div className={styles.sRewards_cont}>

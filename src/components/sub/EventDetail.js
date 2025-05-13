@@ -17,8 +17,8 @@ function RoomPackageDetail({item, type}) {
                 <button className={styles.btns_list} type="button">목록보기</button>
             </div>
             <div className={styles.main}>
-                <img src={`/img/event/event${item.id}.jpg`} alt={item.name} className={styles.main_img}/>
-                <img src={`/img/event/event${item.id}_title.jpg`} alt={item.name} className={styles.main_title} />
+                <img src={`${process.env.PUBLIC_URL}/img/event/event${item.id}.jpg`} alt={item.name} className={styles.main_img}/>
+                <img src={`${process.env.PUBLIC_URL}/img/event/event${item.id}_title.jpg`} alt={item.name} className={styles.main_title} />
                 <p>{item.desc}</p>
                 {item.start_date !== null && item.end_date !== null && <p>기간 : {item.start_date} ~ {item.end_date}</p>}
                 <div>

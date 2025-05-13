@@ -37,7 +37,7 @@ function Room() {
                     <SwiperSlide key={idx}>
                         <div className="row">
                             <div className={"col-md-6 offset-md-1 " + styles.room_swiper_main_img}>
-                                <img src={"./img/room/" + room.id + "_1.jpg"} alt={room.name}/>
+                                <img src={`${process.env.PUBLIC_URL}/img/room/${room.id}_1.jpg`} alt={room.name}/>
                             </div>
                             <div className={"col-md-4 " + styles.room_swiper_main_desc}>
                                 <h3>{room.name}</h3>
@@ -59,7 +59,7 @@ function Room() {
                 {rooms.map((room, idx) => (
                     <SwiperSlide key={idx}>
                         <img
-                        src={"./img/room/" + room.id + "_1.jpg"}
+                        src={`${process.env.PUBLIC_URL}/img/room/${room.id}_1.jpg`}
                         alt={room.name}
                         style={{ width: '100%', cursor: 'pointer', borderRadius: '4px' }}
                         />

@@ -6,16 +6,16 @@ function MainSlider() {
         <>
             <Carousel>
                 <Carousel.Item interval={1500}>
-                    <img src="img/main/mBanner1.jpg" width="100%"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/main/mBanner1.jpg`} width="100%"/>
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
-                    <img src="img/main/mBanner2.jpg" width="100%"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/main/mBanner2.jpg`} width="100%"/>
                 </Carousel.Item>
                 <Carousel.Item interval={500}>
-                    <img src="img/main/mBanner3.jpg" width="100%"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/main/mBanner3.jpg`} width="100%"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src="img/main/mBanner4.jpg" width="100%"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/main/mBanner4.jpg`} width="100%"/>
                 </Carousel.Item>
             </Carousel>
         </>

@@ -30,7 +30,7 @@ function RoomCard({ room, reservationInfo }) {
     return (
         <div className={styles['room-card']}>
             <img
-                src={`/img/room/${room.thumb_img}`}
+                src={`${process.env.PUBLIC_URL}/img/room/${room.thumb_img}`}
                 alt={room.name}
                 className={styles['room-thumb']}
             />

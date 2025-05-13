@@ -30,16 +30,16 @@ function RoomDetail({ item, type }) {
 
             <Carousel className={styles.carousel}>
                 <Carousel.Item interval={1500}>
-                    <img src={`/img/room/${item.id}_1.jpg`} alt={item.name} className="d-block w-100" />
+                    <img src={`${process.env.PUBLIC_URL}/img/room/${item.id}_1.jpg`} alt={item.name} className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
-                    <img src={`/img/room/${item.id}_2.jpg`} alt={item.name} className="d-block w-100" />
+                    <img src={`${process.env.PUBLIC_URL}/img/room/${item.id}_2.jpg`} alt={item.name} className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item interval={500}>
-                    <img src={`/img/room/${item.id}_3.jpg`} alt={item.name} className="d-block w-100" />
+                    <img src={`${process.env.PUBLIC_URL}/img/room/${item.id}_3.jpg`} alt={item.name} className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={`/img/room/${item.id}_4.jpg`} alt={item.name} className="d-block w-100" />
+                    <img src={`${process.env.PUBLIC_URL}/img/room/${item.id}_4.jpg`} alt={item.name} className="d-block w-100" />
                 </Carousel.Item>
             </Carousel>
 
@@ -156,7 +156,7 @@ function RoomDetail({ item, type }) {
                     <Modal.Title>도면 보기</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img src={`/img/room/${item.id}_5.gif`} alt="도면 이미지" style={{ width: '100%' }} />
+                    <img src={`${process.env.PUBLIC_URL}/img/room/${item.id}_5.gif`} alt="도면 이미지" style={{ width: '100%' }} />
                 </Modal.Body>
             </Modal>
         </div>

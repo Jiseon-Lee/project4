@@ -13,7 +13,7 @@ function CardItem(props) {
     return (
         <div className={styles.card}>
             <Nav.Link onClick={() => { navigate('/' + type + '/' + id) }}>
-                <img src={"./img/" + type + "/" + type + id + ".jpg"} alt={title} className="img-fluid" />
+                <img src={`${process.env.PUBLIC_URL}/img/${type}/${type}${id}.jpg`} alt={title} className="img-fluid" />
                 <h4 className="my-2">{title}</h4>
                 <p className="mb-2">{desc}</p>
                 <span>{start_date + " ~ " + end_date}</span>

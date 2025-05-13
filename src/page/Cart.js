@@ -35,7 +35,7 @@ function Cart() {
                                 {cart.map((item) => (
                                     <tr key={item.id}>
                                         <td>
-                                            <img src={`/img/room/${item.imgurl}`} alt={item.name} />
+                                            <img src={`${process.env.PUBLIC_URL}/img/room/${item.imgurl}`} alt={item.name} />
                                         </td>
                                         <td>{item.name}</td>
                                         <td>{item.startDate} ~ {item.endDate}</td>

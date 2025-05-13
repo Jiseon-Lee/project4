@@ -8,7 +8,7 @@ function Header() {
         <header className={styles.header}>
             <div className={styles.header_top}>
                 <Link to="/" className={styles.header_top_logo}>
-                    <img src="/img/logo.gif" alt="Jeju Shilla" height="90" />
+                    <img src={`${process.env.PUBLIC_URL}/img/logo.gif`} alt="Jeju Shilla" height="90" />
                 </Link>
                 <nav className={styles.header_top_utilNav}>
                     <Link to="/login">로그인</Link>

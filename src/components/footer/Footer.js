@@ -11,7 +11,7 @@ function Footer() {
                     <div className="row">
                         <div className={"col-lg-3 col-md-6 mb-4 mb-md-0 " + styles.footer_top_jeju}>
                             <div className={styles.footer_top_jeju_logo}>
-                                <Link to="/"><img src="/img/footer/logo.gif" alt="제주신라호텔"/></Link>
+                                <Link to="/"><img src={`${process.env.PUBLIC_URL}/img/footer/logo.gif"`} alt="제주신라호텔"/></Link>
                             </div>
                             <p>(주)신라호텔<br/>제주특별자치도 서귀포시 중문관광로 72번길 75 (우)63535<br/>TEL. 064-735-5114 <br/>FAX. 064-735-5415</p>
                             <ul className="list-unstyled d-flex flex-row">
@@ -36,13 +36,13 @@ function Footer() {
                         <div className={"col-lg-3 col-md-6 mb-4 mb-md-0 " + styles.footer_top_brand}>
                             <ul className="list-unstyled">
                                 <li className={"mb-2 " + styles.footer_top_brand_tit}>
-                                    <Link to="#"><img src="/img/footer/brandTit.gif" alt="신라호텔"/></Link>
+                                    <Link to="#"><img src={`${process.env.PUBLIC_URL}/img/footer/brandTit.gif`} alt="신라호텔"/></Link>
                                 </li>
                                 <li className={"mb-2 " + styles.footer_top_brand_mono}>
-                                    <Link to="#"><img src="/img/footer/brandMono.gif" alt="신라모노그램"/></Link>
+                                    <Link to="#"><img src={`${process.env.PUBLIC_URL}/img/footer/brandMono.gif`} alt="신라모노그램"/></Link>
                                 </li>
                                 <li className={"mb-2 " + styles.footer_top_brand_stay}>
-                                    <Link to="#"><img src="/img/footer/brandStay.gif" alt="신라스테이"/></Link>
+                                    <Link to="#"><img src={`${process.env.PUBLIC_URL}/img/footer/brandStay.gif`} alt="신라스테이"/></Link>
                                 </li>
                             </ul>
                         </div>
@@ -92,7 +92,7 @@ function Footer() {
                             <p>COPYRIGHT © HOTEL SHILLA CO., LTD. ALL RIGHTS RESERVED.</p>
                         </div>
                         <div className="col-md-4">
-                            <img src="/img/footer/mark_jeju.gif" alt="인증마크"/>
+                            <img src={`${process.env.PUBLIC_URL}/img/footer/mark_jeju.gif`} alt="인증마크"/>
                         </div>
                     </div>
                 </div>
