@@ -12,7 +12,7 @@ import RoomDetail from '../components/sub/RoomDetail';
 
 function Detail({type}) {
     const { id } = useParams();
-    const [item, setItem] = useState();
+    const [item, setItem] = useState(null);
 
     const typeToPath = {
         package: "/json/roomPackage.json",
@@ -24,6 +24,7 @@ function Detail({type}) {
     console.log(type);
 
     useEffect(() => {
+        setItem(null);
         console.log("useEffect");
         axios.get(typeToPath[type])
             .then((res) => {
@@ -43,11 +44,11 @@ function Detail({type}) {
 
         switch (type) {
             case "event":
-                return <EventDetail item={item} />;
+                return <EventDetail item={item} type={type} />;
             case "package":
-                return <RoomPackageDetail item={item} />;
+                return <RoomPackageDetail item={item} type={type} />;
             case "room":
-                return <RoomDetail item={item} />;
+                return <RoomDetail item={item} type={type} />;
             default:
                 return <p>존재하지 않는 유형입니다.</p>;
         }

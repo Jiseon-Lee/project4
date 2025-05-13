@@ -12,7 +12,7 @@ function CardItem(props) {
 
     return (
         <div className={styles.card}>
-            <Nav.Link onClick={() => { navigate('/detail/' + type + '/' + id) }}>
+            <Nav.Link onClick={() => { navigate('/' + type + '/' + id) }}>
                 <img src={"./img/" + type + "/" + type + id + ".jpg"} alt={title} className="img-fluid" />
                 <h4 className="my-2">{title}</h4>
                 <p className="mb-2">{desc}</p>

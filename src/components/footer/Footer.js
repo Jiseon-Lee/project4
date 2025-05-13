@@ -47,7 +47,7 @@ function Footer() {
                             </ul>
                         </div>
 
-                        <div className="col-lg-3 col-md-6 mb-4 mb-md-0 pt-4">
+                        <div className={"col-lg-3 col-md-6 mb-4 mb-md-0 pt-4 " + styles.footer_top_info}>
                             <h5 className="text-uppercase mb-4">소개</h5>
 
                             <ul className="list-unstyled">
@@ -66,7 +66,7 @@ function Footer() {
                             </ul>
                         </div>
 
-                        <div className="col-lg-3 col-md-6 mb-4 mb-md-0 pt-4">
+                        <div className={"col-lg-3 col-md-6 mb-4 mb-md-0 pt-4 " + styles.footer_top_qna}>
                             <h5 className="text-uppercase mb-4">고객문의</h5>
 
                             <ul className="list-unstyled">

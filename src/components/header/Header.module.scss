@@ -114,7 +114,8 @@
                 }
             }
 
-            .navItem:nth-last-child(-n+4) .subMenu {
+            .navItem:nth-last-child(4) .subMenu,
+            .navItem:nth-last-child(3) .subMenu {
                 left: auto;
                 right: -100px;
                 transform: none;

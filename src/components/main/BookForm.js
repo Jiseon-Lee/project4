@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -17,10 +18,25 @@ function BookingForm() {
     const [children, setChildren] = useState(0);
     const [infants, setInfants] = useState(0);
 
+    const navigate = useNavigate();
+    
     const getNights = () => {
         if (!startDate || !endDate) return 1;
         const timeDiff = endDate.getTime() - startDate.getTime();
         return Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+    };
+
+    const handleSearchRooms = () => {
+        const info = {
+            startDate: startDate.toISOString().slice(0, 10),
+            endDate: endDate.toISOString().slice(0, 10),
+            rooms,
+            adults,
+            children,
+            infants
+        };
+        
+        navigate('/select-room', { state: info });
     };
 
     return (
@@ -116,7 +132,7 @@ function BookingForm() {
                         </Form.Group>
                     </Col>
                     <Col md={2} className="ms-auto">
-                        <Button variant="dark" className="w-100" style={{ marginTop: '30px' }}>
+                        <Button variant="dark" className="w-100" style={{ marginTop: '30px' }} onClick={handleSearchRooms}>
                             예약하기
                         </Button>
                     </Col>

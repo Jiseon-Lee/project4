@@ -3,8 +3,10 @@ import Accordion from 'react-bootstrap/Accordion';
 
 import styles from './EventDetail.module.scss';
 
-function RoomPackageDetail({item}) {
+function RoomPackageDetail({item, type}) {
     console.log(item);
+
+    if (type !== "event") return null;
 
     return (
         <div className={styles.detailCont}>
