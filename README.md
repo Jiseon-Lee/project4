@@ -1,6 +1,5 @@
 사이트 설명
 ![슬라이드1](https://github.com/user-attachments/assets/b440e76e-d349-4c48-b61e-723ade2c81e5)
-![슬라이드2](https://github.com/user-attachments/assets/d10f40b1-0efc-42d6-a7d4-c6a22b16f612)
 ![슬라이드3](https://github.com/user-attachments/assets/cb55f62b-29c6-44ee-a8f2-4ba0b9a56996)
 ![슬라이드4](https://github.com/user-attachments/assets/5b16c33b-e637-42fd-9f3f-a5db45857aef)
 ![슬라이드5](https://github.com/user-attachments/assets/efbe83cd-fde2-418b-ba13-6af8295ad041)
